@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Maven Pro", sans-serif;
+
+  background-color: antiquewhite;
+}
+p {
+  margin-top: 10%;
+}
+.container {
+  margin-top: 10%;
+  text-align: center;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 350px;
+  margin-bottom: 30px;
+}
+.progress-back {
+  position: absolute;
+  top: 50%;
+  background-color: grey;
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  position: absolute;
+  top: 50%;
+  background-color: #00c8ff;
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease-in;
+}
+.circle {
+  background-color: white;
+  color: grey;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease;
+}
+.circle.active {
+  border-color: #00c8ff;
+}
+
+.btn {
+  background-color: #00c8ff;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+.btn:focus {
+  outline: 0;
+}
