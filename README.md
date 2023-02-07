@@ -6,4 +6,4 @@ This is created by Ranjit T to help learners improve their Frontend Skills.
 
 1. Expanding Cards
 2. Progress Steps
-3. Rotating Navigation and Page
+
